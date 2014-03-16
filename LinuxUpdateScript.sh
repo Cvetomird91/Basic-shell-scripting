@@ -1,4 +1,4 @@
-#!/bin/bash -x 
+#!/bin/bash 
 
 	#Check if the OS is Arch or Arch Linux based (e.g. Manjaro)
 
