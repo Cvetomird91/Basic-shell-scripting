@@ -10,6 +10,10 @@ if [ -d /etc/pacman.d ]; then
 elif [ -d /etc/apt ]; then 
 
 	sudo apt-get update && sudo apt-get dist-upgrade
-fi
 
-# TO DO: add command for Red Hat distributions 
+	#Check if the OS is a Red Hat-based system
+
+elif [ -d /etc/rpm ]; then
+
+	sudo check-rpms -v -lq && sudo check-rpms --update
+fi
