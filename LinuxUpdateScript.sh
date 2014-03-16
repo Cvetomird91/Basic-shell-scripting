@@ -15,5 +15,6 @@ elif [ -d /etc/apt ]; then
 
 elif [ -d /etc/rpm ]; then
 
-	sudo check-rpms -v -lq && sudo check-rpms --update
+	sudo list updates && yum update
+
 fi
