@@ -22,4 +22,4 @@ sudo wget http://deponie.yamagi.org/quake2/debs/i386/yamagi-quake2-addons_1.4_i3
 #install them with dpkg
 sudo dpkg -i *.deb
 
-#paste Quake 2 files 
+echo "You may now paste your Quake 2 files from your Quake 2 CD into /usr/share/games/quake2/"
