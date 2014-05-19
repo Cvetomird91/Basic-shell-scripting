@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -d /mnt/UT ]; then
+	sudo mount -o loop /media/785A01705A012C86/Disc\ Images/UT\ GOTY/UT_GOTY_CD1.iso /mnt/UT 
+fi 
+
+wine /mnt/UT/Setup.exe 
+
+WINEPID=$(pgrep wineserver)
+#TO DO:
+#unmount iso when game is terminated
+#echo $WINEPID
+
+#if [ ! "$WINEPID" ]; then
+#	sudo umount /mnt/UT
+#fi
