@@ -1,0 +1,13 @@
+pwdx - print process working directory
+	pwdx 3315
+	3511: /home/cvetomir
+
+lsof -i - print ports and processes that use them
+	lsof -i 
+	lsof -i :3315 
+
+netstat -tulpn - the netstat tool	
+
+readlink - readlink - print value of a symbolic link or canonical file name
+
+tasksel - a user interface for installing tasks 
