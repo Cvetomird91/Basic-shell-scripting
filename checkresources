@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# This script return the process name of the process with most CPU or RAM consumption 
+#
+#
+#
+#
+#
+
+if [ "$1" == ram ];
+	then
+
+		RESOURCE=$(ps auxfwww | awk '{print $4" "$2}' | sort -n | tail -n 1 | awk '{print $2}')
+		ps auxfwww | grep $RESOURCE;
+
+elif [ "$1" == cpu ];
+	then
+
+		RESOURCE=$(ps auxfwww | awk '{print $4" "$3}' | sort -n | tail -n 1 | awk '{print $2}')
+		ps auxfwww | grep $RESOURCE;		
+		
+elif [  ! "$1"  ];
+	then
+
+		echo "please enter resource type"
+
+fi
+
